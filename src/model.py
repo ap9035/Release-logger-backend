@@ -18,4 +18,5 @@ connect(db="deploy-logger", host=CONNECT_STRING)
 class Release(Document):
     app_name = StringField(required=True)
     version = StringField(required=True)
-    update_time = DateTimeField(required=True)
+    release_date= DateTimeField(required=True)
+    branch = StringField(required=True)

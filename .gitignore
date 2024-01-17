@@ -1,0 +1,10 @@
+/tests/appmap.yml
+/.idea/misc.xml
+/.idea/modules.xml
+/poetry.lock
+/.idea/inspectionProfiles/Project_Default.xml
+/.idea/release-logger.iml
+/tests/tmp/appmap/unittest/test_controller_ControllerTest_test_get_latest_two_release.appmap.json
+/tests/tmp/appmap/unittest/test_controller_ControllerTest_test_get_release_by_app_name.appmap.json
+/tests/tmp/appmap/unittest/test_model_TestRelease_test_insert_release.appmap.json
+/.idea/vcs.xml

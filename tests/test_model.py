@@ -20,12 +20,13 @@ class TestRelease(unittest.TestCase):
         release = Release(
             app_name='test',
             version='1.0.0',
-            update_time=datetime.now()
+            release_date=datetime.now(),
+            branch='master'
         )
         release.save()
         self.assertEqual(release.app_name, 'test')
         self.assertEqual(release.version, '1.0.0')
-        self.assertIsNotNone(release.update_time)
+        self.assertIsNotNone(release.release_date)
 
 
 if __name__ == '__main__':

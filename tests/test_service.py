@@ -27,7 +27,8 @@ class TestReleaseService(unittest.TestCase):
         self.releaseService.insert_release(
             app_name='test_insert',
             version='1.0.0',
-            update_time=datetime.now()
+            release_date=datetime.now(),
+            branch='master'
         )
 
         release = Release.objects(app_name='test_insert').first()

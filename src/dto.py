@@ -2,16 +2,18 @@ from datetime import datetime
 
 
 class ReleaseDto:
-    def __init__(self, app_name: str, version: str, update_time: datetime):
+    def __init__(self, app_name: str, version: str, release_date: datetime, branch: str):
         self.app_name = app_name
         self.version = version
-        self.update_time = update_time
+        self.release_date = release_date
+        self.branch = branch
 
     def serialize(self):
         return {
             'app_name': self.app_name,
             'version': self.version,
-            'update_time': self.update_time.strftime('%Y-%m-%d %H:%M:%S')
+            'release_date': self.release_date.strftime('%Y-%m-%d %H:%M:%S'),
+            'branch': self.branch
         }
 
 
